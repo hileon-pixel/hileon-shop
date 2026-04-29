@@ -1,38 +1,146 @@
 [
   {
     "id": "H001",
-    "title": "Alen Air Purifier BreatheSmart 75i",
-    "category": "Operational Infrastructure",
-    "subcategory": "Climate & Wellness",
-    "desc": "Commercial-grade HEPA filtration for large office spaces up to 2800 Sq. Ft. Essential for professional air quality.",
-    "link": "https://www.amazon.com/dp/B0F99CTJPC",
-    "imageUrl": "https://m.media-amazon.com/images/I/71Z8-LpqHGL._AC_SL1500_.jpg"
+    "title": "Casio HR-170RC Plus – Mini Desktop Printing Calculator",
+    "category": "Implementation Tools",
+    "subcategory": "Computing",
+    "desc": "Check & Correct, Cost/Sell/Margin, Dual-Color Print | Ideal for Taxes, Bookkeeping & Accounting Tasks",
+    "link": "https://amzn.to/4n0NlMz",
+    "imageUrl": "https://m.media-amazon.com/images/I/71lERwP-lwL._AC_SL1500_.jpg"
   },
   {
     "id": "H002",
-    "title": "Portable Solar Station 2000W",
-    "category": "Energy & Connectivity",
-    "subcategory": "Power Resilience",
-    "desc": "High-capacity backup power for off-grid project sites and remote business operations.",
-    "link": "https://amzn.to/4ukHvbP",
-    "imageUrl": "https://m.media-amazon.com/images/I/71Y+O-kZ7DL._AC_SL1500_.jpg"
+    "title": "Sharp EL-1801V Ink Printing Calculator",
+    "category": "Implementation Tools",
+    "subcategory": "Computing",
+    "desc": "12-Digit LCD, AC Powered, Off-White, Ideal for Business & Office Use, Easy-to-Read Display & Durable Design",
+    "link": "https://amzn.to/48wwvz0",
+    "imageUrl": "https://m.media-amazon.com/images/I/81h9wpvQktL._AC_SL1500_.jpg"
   },
   {
     "id": "H003",
-    "title": "Ergonomic Mesh Task Chair",
-    "category": "Operational Infrastructure",
-    "subcategory": "Office Furniture",
-    "desc": "BIFMA certified executive seating designed for 8+ hours of professional productivity.",
-    "link": "#",
-    "imageUrl": "https://m.media-amazon.com/images/I/718yTEtHltL._AC_SL1500_.jpg"
+    "title": "HP-30B Business Professional Calculator",
+    "category": "Implementation Tools",
+    "subcategory": "Computing",
+    "desc": "Business Professional Calculator",
+    "link": "https://amzn.to/4tn299T",
+    "imageUrl": "https://m.media-amazon.com/images/I/61iQENxwoaL._AC_SL1000_.jpg"
   },
   {
     "id": "H004",
-    "title": "Starlink Standard Kit",
+    "title": "Wireless 1D 2D Barcode Scanner with Stand",
+    "category": "Implementation Tools",
+    "subcategory": "Computing",
+    "desc": "NetumScan Portable Automatic QR Code Scanner Supports Screen Scan Handheld CMOS Image Bar Code Reader",
+    "link": "https://amzn.to/3QRQCBz",
+    "imageUrl": "https://m.media-amazon.com/images/I/61MEzfDiu9L._AC_SL1444_.jpg"
+  },
+  {
+    "id": "H005",
+    "title": "LOLARAN AL-923 Mixed Denomination Money Counter Machine",
+    "category": "Implementation Tools",
+    "subcategory": "Computing",
+    "desc": "Value Counting with CIS/UV/MG/IR/DD/DBL/HLF/CHN Counterfeit Detection, Touch Screen",
+    "link": "https://amzn.to/4n8i5er",
+    "imageUrl": "https://m.media-amazon.com/images/I/71aau0jVodL._AC_SL1500_.jpg"
+  },
+  {
+    "id": "H006",
+    "title": "EGO POWER+ Portable Power Station",
     "category": "Energy & Connectivity",
-    "subcategory": "Global Networking",
-    "desc": "High-speed, low-latency satellite internet for remote business connectivity anywhere in the world.",
-    "link": "#",
-    "imageUrl": "https://m.media-amazon.com/images/I/41-l8vLzZGL._AC_.jpg"
+    "subcategory": "Power Resilience",
+    "desc": "3000W, Battery Powered, Inverter Generator for Home and Outdoor, Battery and Charger Not Included - PST3040",
+    "link": "https://amzn.to/49higOJ",
+    "imageUrl": "https://m.media-amazon.com/images/I/717EcNpKiyL._AC_SL1500_.jpg"
+  },
+  {
+    "id": "H007",
+    "title": "Jackery SolarSaga 200W Portable Solar Panel",
+    "category": "Energy & Connectivity",
+    "subcategory": "Power Resilience",
+    "desc": "IP68 Foldable Bifacial Solar Panels,Compatible with Jackery Explorer Power Station and Solar Generator,for Rooftops Outdoor",
+    "link": "https://amzn.to/4t3Ps3k",
+    "imageUrl": "https://m.media-amazon.com/images/I/71UcwVR1HzL._AC_SL1500_.jpg"
+  },
+  {
+    "id": "H008",
+    "title": "Brady M211 Portable Bluetooth Monochrome Label Printer",
+    "category": "Implementation Tools",
+    "subcategory": "Computing",
+    "desc": "Seamlessly design, preview and print labels right from our industry-leading Express Labels",
+    "link": "https://amzn.to/4vUfGbr",
+    "imageUrl": "https://m.media-amazon.com/images/I/71bspemCozL._AC_SL1500_.jpg"
+  },
+  {
+    "id": "H009",
+    "title": "Bluetooth Thermal Shipping Label Printer",
+    "category": "Implementation Tools",
+    "subcategory": "Computing",
+    "desc": "4x6 Wireless Label Maker with Tape for Small Business - Compatible with iPhone, Android, Windows & Mac",
+    "link": "https://amzn.to/49fT3Ei",
+    "imageUrl": "https://m.media-amazon.com/images/I/71GAy6t6WeL._AC_SL1500_.jpg"
+  },
+  {
+    "id": "H010",
+    "title": "Brady M210 Portable Label Printer with Rubber Bumpers",
+    "category": "Implementation Tools",
+    "subcategory": "Computing",
+    "desc": "Multi-Line Print, 6 to 40 Point Font (Replaces BMP21-PLUS Printer)",
+    "link": "https://amzn.to/4mY5xWM",
+    "imageUrl": "https://m.media-amazon.com/images/I/613RFPE6XzL._AC_SL1080_.jpg"
+  },
+  {
+    "id": "H011",
+    "title": "HP OfficeJet Pro 9135e Wireless All-in-One Color Inkjet Printer",
+    "category": "Implementation Tools",
+    "subcategory": "Computing",
+    "desc": "Print, scan, copy, fax, ADF, Duplex printing best-for-office, 3 month Instant Ink trial included, AI-enabled (404M0A)",
+    "link": "https://amzn.to/4u9vuFs",
+    "imageUrl": "https://m.media-amazon.com/images/I/61DfvhJwqaL._AC_SL1500_.jpg"
+  },
+  {
+    "id": "H012",
+    "title": "Brother Professional Laser Printer All-in-One with Scanner and Copier",
+    "category": "Implementation Tools",
+    "subcategory": "Computing",
+    "desc": "High-Speed 50 ppm Monochrome Printing, Wireless Network Ready, Dual-Band WiFi, Auto 2-Sided Print (MFC-L5915DW)",
+    "link": "https://amzn.to/4vZkGvk",
+    "imageUrl": "https://m.media-amazon.com/images/I/61CCkI4GcSL._AC_SL1500_.jpg"
+  },
+  {
+    "id": "H013",
+    "title": "2-in-1 Laser Tape Measure",
+    "category": "Precision Tools",
+    "subcategory": "Computing",
+    "desc": "197Ft Laser Measuring Tool & 16Ft Measuring Tape with M/in/Ft/Ft+in Units, Magnetic Hook - Pythagorean, Area, Volume, Digital Tape Measure for Woodworking and DIY",
+    "link": "https://amzn.to/4cQI4SW",
+    "imageUrl": "https://m.media-amazon.com/images/I/61bYD12V9+L._AC_SL1500_.jpg"
+  },
+  {
+    "id": "H014",
+    "title": "Huepar 330Ft Green Laser Measurement Tool with APP Control",
+    "category": "Precision Tools",
+    "subcategory": "Computing",
+    "desc": "Rechargeable Bluetooth Distance Meter ±1/16" High Accuracy, Angle Sensor, Multiple Modes, IP54 Waterproof Durable for Home & Construction",
+    "link": "https://amzn.to/4t3S0yE",
+    "imageUrl": "https://m.media-amazon.com/images/I/71H5ICdWjML._AC_SL1500_.jpg"
+  },
+  {
+    "id": "H015",
+    "title": "REEKON T1 Tomahawk Digital Tape Measure",
+    "category": "Precision Tools",
+    "subcategory": "Computing",
+    "desc": "Professional Accurate Measuring Tool, Green Laser, E-Paper Measuring List, Measurements Shared Over Bluetooth, Replaceable Blades",
+    "link": "https://amzn.to/4tE2DJj",
+    "imageUrl": "https://m.media-amazon.com/images/I/71rre4Oc+rL._AC_SL1500_.jpg"
+  },
+  {
+    "id": "H016",
+    "title": "Huepar Pro Laser Level 360 Self Leveling with 50inch Tripod",
+    "category": "Precision Tools",
+    "subcategory": "Computing",
+    "desc": "3 x 360° High Brightness Green Laser Leveler Tool for Construction, Tile and Picture Hanging, 8000mAh Li-ion Battery & Magnetic Bracket",
+    "link": "https://amzn.to/4sYNIZb",
+    "imageUrl": "https://m.media-amazon.com/images/I/71x+ESusUTL._AC_SL1500_.jpg"
   }
 ]

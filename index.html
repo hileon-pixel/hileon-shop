@@ -3,23 +3,23 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>PRO PROCURE | Business & Project Infrastructure</title>
+  <title>Hileon Shop | Business & Project Infrastructure</title>
   <meta name="description" content="Premium procurement for global business operations and project implementation." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
     :root {
       --bg: #ffffff;
       --card: #ffffff;
-      --text: #111827; /* Professional Navy Black */
-      --muted: #64748b; /* Slate Gray */
-      --brand: #2563eb; /* Trust Blue */
-      --accent: #f8fafc; /* Fine line accent */
-      --border: #e2e8f0; /* Ultra-thin borders */
-      --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 2px 0 rgba(0, 0, 0, 0.03);
-      --radius: 4px; /* Professional sharp corners */
+      --text: #0f172a; /* Deep professional slate */
+      --muted: #64748b;
+      --brand: #2563eb; /* Royal Blue */
+      --accent: #f8fafc;
+      --border: #e2e8f0;
+      --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+      --radius: 6px;
       --max: 1200px;
     }
 
@@ -75,12 +75,9 @@
     }
 
     .brand h1 { font-size: 1.25rem; margin: 0; font-weight: 700; letter-spacing: -0.5px; }
-    .brand p { margin: 0; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1px; color: var(--muted); }
+    .brand p { margin: 0; font-size: 0.65rem; text-transform: uppercase; letter-spacing: 1px; color: var(--brand); font-weight: 700; }
 
-    .search-container {
-      flex: 1;
-      max-width: 600px;
-    }
+    .search-container { flex: 1; max-width: 600px; }
 
     .search-box {
       display: flex;
@@ -88,7 +85,7 @@
       background: var(--accent);
       border: 1px solid var(--border);
       padding: 0.5rem 1rem;
-      border-radius: 6px;
+      border-radius: 8px;
     }
 
     .search-box input {
@@ -100,66 +97,82 @@
       color: var(--text);
     }
 
-    /* Main Layout */
-    .wrap { max-width: var(--max); margin: 0 auto; padding: 2rem; }
-
-    /* Hero Section */
-    .hero {
-      padding: 4rem 0;
+    /* Sub-Navigation Section */
+    .nav-wrapper {
+      background: #fff;
       border-bottom: 1px solid var(--border);
-      margin-bottom: 3rem;
+      padding: 1rem 0;
     }
 
-    .hero h2 { font-size: 2.5rem; font-weight: 600; margin: 0 0 1rem; letter-spacing: -1px; }
-    .hero p { font-size: 1.125rem; color: var(--muted); max-width: 600px; margin: 0; }
-
-    /* Modern Category Pills */
-    .filter-nav {
+    .filter-row {
       display: flex;
       gap: 0.5rem;
-      margin: 2rem 0;
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 0 2rem;
       overflow-x: auto;
-      padding-bottom: 1rem;
       scrollbar-width: none;
     }
 
-    .filter-btn {
+    .sub-nav {
+      display: flex;
+      gap: 1.5rem;
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 0.75rem 2rem 0;
+      font-size: 0.8rem;
+      color: var(--muted);
+      border-top: 1px solid #f1f5f9;
+      margin-top: 0.75rem;
+    }
+
+    .cat-btn {
       background: transparent;
       border: 1px solid var(--border);
-      padding: 0.5rem 1.25rem;
+      padding: 0.5rem 1rem;
       border-radius: 20px;
-      font-size: 0.875rem;
-      font-weight: 500;
+      font-size: 0.8rem;
+      font-weight: 600;
       cursor: pointer;
       white-space: nowrap;
       transition: all 0.2s;
       color: var(--muted);
     }
 
-    .filter-btn.active {
+    .cat-btn.active {
       background: var(--text);
       color: white;
       border-color: var(--text);
     }
 
-    /* Product Grid with Fine Lines */
+    .sub-item { cursor: pointer; transition: 0.2s; font-weight: 500; }
+    .sub-item:hover, .sub-item.active { color: var(--brand); }
+
+    /* Main Content */
+    .wrap { max-width: var(--max); margin: 0 auto; padding: 2rem; }
+
+    .hero { margin-bottom: 3rem; }
+    .hero h2 { font-size: 2.2rem; font-weight: 700; margin: 0 0 0.5rem; letter-spacing: -1px; }
+    .hero p { font-size: 1.1rem; color: var(--muted); margin: 0; }
+
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      gap: 2rem;
+      gap: 2.5rem;
     }
 
     .card {
       background: var(--card);
       border: 1px solid var(--border);
-      transition: transform 0.2s, box-shadow 0.2s;
+      transition: all 0.3s ease;
       display: flex;
       flex-direction: column;
     }
 
     .card:hover {
-      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.06);
       transform: translateY(-4px);
+      border-color: var(--brand);
     }
 
     .img-box {
@@ -185,9 +198,9 @@
       flex-direction: column;
     }
 
-    .card-cat {
-      font-size: 0.7rem;
-      font-weight: 700;
+    .tag {
+      font-size: 0.65rem;
+      font-weight: 800;
       text-transform: uppercase;
       color: var(--brand);
       letter-spacing: 0.5px;
@@ -202,48 +215,32 @@
     }
 
     .card-desc {
-      font-size: 0.875rem;
+      font-size: 0.85rem;
       color: var(--muted);
       margin-bottom: 1.5rem;
-      display: -webkit-box;
-      -webkit-line-clamp: 3;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
+      line-height: 1.6;
     }
 
-    .card-action {
+    .btn-buy {
       margin-top: auto;
-      display: flex;
-      gap: 0.5rem;
-    }
-
-    .btn-main {
-      flex: 1;
       background: var(--text);
       color: white;
       text-align: center;
-      padding: 0.75rem;
+      padding: 0.8rem;
       text-decoration: none;
       font-weight: 600;
-      font-size: 0.875rem;
+      font-size: 0.8rem;
       border-radius: 4px;
+      transition: background 0.2s;
     }
 
-    .btn-copy {
-      background: var(--accent);
-      border: 1px solid var(--border);
-      padding: 0.75rem;
-      border-radius: 4px;
-      cursor: pointer;
-    }
+    .btn-buy:hover { background: #1e293b; }
 
     footer {
       margin-top: 5rem;
       padding: 4rem 2rem;
       background: var(--accent);
       border-top: 1px solid var(--border);
-      font-size: 0.875rem;
-      color: var(--muted);
     }
 
     .footer-content {
@@ -256,24 +253,14 @@
     }
 
     .toast {
-      position: fixed;
-      bottom: 2rem;
-      left: 50%;
-      transform: translateX(-50%);
-      background: var(--text);
-      color: white;
-      padding: 0.75rem 1.5rem;
-      border-radius: 30px;
-      font-size: 0.875rem;
-      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-      opacity: 0;
-      transition: opacity 0.3s;
-      z-index: 1000;
+      position: fixed; bottom: 2rem; left: 50%; transform: translateX(-50%);
+      background: var(--text); color: white; padding: 0.75rem 1.5rem;
+      border-radius: 30px; font-size: 0.875rem; opacity: 0; transition: 0.3s; z-index: 1000;
     }
 
     @media (max-width: 768px) {
-      .hero h2 { font-size: 1.75rem; }
-      .topbar { flex-direction: column; align-items: stretch; gap: 1rem; }
+      .topbar { flex-direction: column; align-items: stretch; }
+      .hero h2 { font-size: 1.8rem; }
     }
   </style>
 </head>
@@ -282,26 +269,28 @@
   <header>
     <div class="topbar">
       <div class="brand">
-        <div class="logo-mark">P</div>
+        <div class="logo-mark">H</div>
         <div>
-          <h1 id="siteName">PRO PROCURE</h1>
-          <p id="siteTagline">Global Project Infrastructure</p>
+          <h1>HILEON SHOP</h1>
+          <p>Project & Business Logistics</p>
         </div>
       </div>
       <div class="search-container">
         <div class="search-box">
-          <input type="text" id="q" placeholder="Search infrastructure, energy resilience, or professional tools...">
+          <input type="text" id="q" placeholder="Search infrastructure, energy tools, or office essentials...">
         </div>
       </div>
+    </div>
+    <div class="nav-wrapper">
+      <div class="filter-row" id="catsRow"></div>
+      <div class="sub-nav" id="subCatsRow"></div>
     </div>
   </header>
 
   <main class="wrap">
     <section class="hero">
-      <h2>Professional Grade <br>Project Essentials</h2>
-      <p>A curated selection of high-end business items and project infrastructure for modern operations worldwide.</p>
-      
-      <nav class="filter-nav" id="catsRow"></nav>
+      <h2>Professional Grade <br>Business & Project Essentials</h2>
+      <p>Curated infrastructure for modern project implementation and business scaling.</p>
     </section>
 
     <div id="grid" class="grid"></div>
@@ -310,11 +299,12 @@
   <footer>
     <div class="footer-content">
       <div>
-        <strong id="footerName">PRO PROCURE</strong><br>
-        © <span id="year"></span> | Industrial & Project Procurement.
+        <strong style="font-size: 1.1rem;">HILEON SHOP</strong><br>
+        <a href="mailto:hileonint@gmail.com" style="color: var(--brand); text-decoration: none; font-weight: 500;">hileonint@gmail.com</a>
+        <p style="font-size: 0.85rem; color: var(--muted);">© <span id="year"></span> | High-End Procurement Partner.</p>
       </div>
-      <div style="max-width: 400px;">
-        <p id="disclosureText" style="margin: 0;"></p>
+      <div style="max-width: 450px; font-size: 0.8rem; color: var(--muted); line-height: 1.6;">
+        Affiliate Disclosure: As an Amazon Associate, Hileon Shop earns from qualifying purchases. We curate professional-grade items to streamline your business and project goals.
       </div>
     </div>
   </footer>
@@ -322,135 +312,100 @@
   <div id="toast" class="toast">Link copied</div>
 
   <script>
-    // --- Configuration ---
-    const CONFIG = {
-      name: "PRO PROCURE",
-      tagline: "Infrastructure. Energy. Production. Security.",
-      disclosure: "Affiliate Disclosure: As an Amazon Associate, we earn from qualifying purchases at no extra cost to you.",
-      categories: [
-        "All", 
-        "Operational Infrastructure", 
-        "Energy & Connectivity", 
-        "Implementation Tools", 
-        "Safety & Maintenance",
-        "Strategy & Growth"
-      ]
+    // --- Configuration Mapping ---
+    const CATEGORY_MAP = {
+      "All": [],
+      "Operational Infrastructure": ["Office Furniture", "Climate & Wellness", "Storage Solutions"],
+      "Energy & Connectivity": ["Power Resilience", "Global Networking", "Solar Infrastructure"],
+      "Implementation Tools": ["Computing", "Precision Tools", "Field Equipment"],
+      "Safety & Maintenance": ["PPE", "Surveillance", "Janitorial"],
+      "Strategy & Growth": ["Planning Kits", "Media", "Workshops"]
     };
 
-    // --- State Management ---
     let products = [];
     let activeCat = "All";
+    let activeSub = "All";
     let query = "";
 
-    // --- Selectors ---
-    const $ = (s) => document.querySelector(s);
-    const grid = $("#grid");
-    const catsRow = $("#catsRow");
+    const catsRow = document.getElementById('catsRow');
+    const subCatsRow = document.getElementById('subCatsRow');
+    const grid = document.getElementById('grid');
 
-    // --- Logic ---
-    function renderCats() {
-      catsRow.innerHTML = CONFIG.categories.map(c => `
-        <button class="filter-btn ${c === activeCat ? 'active' : ''}" onclick="setCategory('${c}')">
-          ${c}
-        </button>
+    function renderFilters() {
+      // Main Categories
+      catsRow.innerHTML = Object.keys(CATEGORY_MAP).map(c => `
+        <button class="cat-btn ${c === activeCat ? 'active' : ''}" onclick="setCategory('${c}')">${c}</button>
       `).join('');
+
+      // Sub Categories
+      if (activeCat === "All") {
+        subCatsRow.style.display = "none";
+      } else {
+        subCatsRow.style.display = "flex";
+        const subs = ["All", ...CATEGORY_MAP[activeCat]];
+        subCatsRow.innerHTML = subs.map(s => `
+          <span class="sub-item ${s === activeSub ? 'active' : ''}" onclick="setSubCategory('${s}')">${s}</span>
+        `).join('');
+      }
     }
 
     window.setCategory = (c) => {
       activeCat = c;
-      renderCats();
+      activeSub = "All";
+      renderFilters();
       renderGrid();
     };
 
-    function showToast(msg) {
-      const t = $("#toast");
-      t.textContent = msg;
-      t.style.opacity = 1;
-      setTimeout(() => t.style.opacity = 0, 2000);
-    }
-
-    window.copyLink = (url) => {
-      navigator.clipboard.writeText(url);
-      showToast("Link copied to clipboard ✅");
+    window.setSubCategory = (s) => {
+      activeSub = s;
+      renderFilters();
+      renderGrid();
     };
 
     function renderGrid() {
       const q = query.toLowerCase();
       const filtered = products.filter(p => {
         const matchesCat = activeCat === "All" || p.category === activeCat;
+        const matchesSub = activeSub === "All" || p.subcategory === activeSub;
         const matchesQuery = p.title.toLowerCase().includes(q) || p.desc.toLowerCase().includes(q);
-        return matchesCat && matchesQuery;
+        return matchesCat && matchesSub && matchesQuery;
       });
 
       if (filtered.length === 0) {
-        grid.innerHTML = `<div style="grid-column: 1/-1; padding: 4rem; text-align: center; color: var(--muted); border: 1px dashed var(--border);">No items found in this category.</div>`;
+        grid.innerHTML = `<div style="grid-column: 1/-1; padding: 4rem; text-align: center; color: var(--muted); border: 1px dashed var(--border);">No items found.</div>`;
         return;
       }
 
       grid.innerHTML = filtered.map(p => `
         <div class="card">
-          <div class="img-box">
-            <img src="${p.imageUrl}" alt="${p.title}" loading="lazy">
-          </div>
+          <div class="img-box"><img src="${p.imageUrl}" alt="${p.title}" loading="lazy"></div>
           <div class="card-body">
-            <div class="card-cat">${p.category}</div>
+            <span class="tag">${p.subcategory || p.category}</span>
             <h3 class="card-title">${p.title}</h3>
             <p class="card-desc">${p.desc}</p>
-            <div class="card-action">
-              <a href="${p.link}" target="_blank" class="btn-main">View on Amazon</a>
-              <button class="btn-copy" onclick="copyLink('${p.link}')" title="Copy Link">
-                📋
-              </button>
-            </div>
+            <a href="${p.link}" target="_blank" class="btn-buy">Procure Item</a>
           </div>
         </div>
       `).join('');
     }
 
-    // --- Initialization ---
     async function init() {
-      // Set UI Text
-      $("#siteName").textContent = CONFIG.name;
-      $("#footerName").textContent = CONFIG.name;
-      $("#siteTagline").textContent = CONFIG.tagline;
-      $("#disclosureText").textContent = CONFIG.disclosure;
-      $("#year").textContent = new Date().getFullYear();
-
-      // Setup Search
-      $("#q").addEventListener("input", (e) => {
+      document.getElementById('year').textContent = new Date().getFullYear();
+      document.getElementById('q').addEventListener('input', (e) => {
         query = e.target.value;
         renderGrid();
       });
 
-      // Load Products
       try {
         const res = await fetch('products.json');
-        if (res.ok) {
-          products = await res.json();
-        } else {
-          // Fallback sample data if file not found
-          products = [
-            {
-              title: "Portable Solar Station 2000W",
-              category: "Energy & Connectivity",
-              desc: "Critical power resilience for remote project sites and field operations.",
-              link: "#",
-              imageUrl: "https://m.media-amazon.com/images/I/71Y+O-kZ7DL._AC_SL1500_.jpg"
-            },
-            {
-              title: "Ergonomic Mesh Task Chair",
-              category: "Operational Infrastructure",
-              desc: "BIFMA certified seating for high-productivity business environments.",
-              link: "#",
-              imageUrl: "https://m.media-amazon.com/images/I/718yTEtHltL._AC_SL1500_.jpg"
-            }
-          ];
-        }
+        if (res.ok) products = await res.json();
+        else throw new Error();
       } catch (e) {
-        console.error("Error loading products", e);
+        // Fallback demo data
+        products = [{ title: "Eco-Solar Generator", category: "Energy & Connectivity", subcategory: "Power Resilience", desc: "Reliable power for remote operations.", link: "#", imageUrl: "https://m.media-amazon.com/images/I/71Y+O-kZ7DL._AC_SL1500_.jpg" }];
       }
 
-      renderCats();
+      renderFilters();
       renderGrid();
     }
 
